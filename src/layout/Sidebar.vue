@@ -6,11 +6,21 @@
       </div>
       <div class="sidebar-items">
         <div class="sidebar-direct-links">
-          <NavItem :iconName="'videoIcon'" />
-          <NavItem />
-          <NavItem :iconName="'chart'" />
-          <NavItem :iconName="'calendar'" />
-          <NavItem :iconName="'file'" />
+          <router-link to="/">
+            <NavItem :iconName="'videoIcon'" />
+          </router-link>
+          <router-link to="/q&a">
+            <NavItem />
+          </router-link>
+          <router-link to="/stats">
+            <NavItem :iconName="'chart'" />
+          </router-link>
+          <router-link to="/calendar">
+            <NavItem :iconName="'calendar'" />
+          </router-link>
+          <router-link to="/files">
+            <NavItem :iconName="'file'" />
+          </router-link>
         </div>
         <div class="sidebar-user-links">
           <NavItem :iconName="'mail'" />
