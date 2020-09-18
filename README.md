@@ -1,4 +1,4 @@
-# webinar-dashboard
+# test
 
 ## Project setup
 ```
