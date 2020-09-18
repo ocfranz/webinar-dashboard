@@ -14,5 +14,7 @@ export default {
 .page {
   width: calc(100% - 70px);
   height: 100%;
+  background-color: #202225;
+  color: #ffffff;
 }
 </style>

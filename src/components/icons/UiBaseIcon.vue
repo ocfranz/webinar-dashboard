@@ -17,7 +17,7 @@ export default {
   name: "UiBaseIcon",
   props: {
     iconName: { type: String, default: "message" },
-    color: { type: String, default: "#ffffff" },
+    color: { type: String, default: "#69747f" },
     size: { type: String, default: "25px" }
   },
   components: {

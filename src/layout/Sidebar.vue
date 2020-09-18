@@ -47,6 +47,7 @@ export default {
   height: 100%;
   background-color: #202225;
   color: #ffffff;
+  border-right: 3px solid #25272c;
   .sidebar-container {
     padding: 0px 15px;
     text-align: center;
@@ -66,6 +67,16 @@ export default {
     padding: 0px 0px 20px 0px;
     .avatar-wrapper {
       margin-top: 10px;
+    }
+  }
+  a {
+    button {
+      opacity: 0.7;
+    }
+  }
+  a.router-link-exact-active {
+    button {
+      opacity: 1;
     }
   }
 }
