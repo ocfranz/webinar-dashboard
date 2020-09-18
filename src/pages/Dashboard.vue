@@ -1,8 +1,6 @@
 <template>
   <div class="page">
-    App
-    <span>Video</span>
-   
+    <span>Dash</span>
   </div>
 </template>
 
@@ -13,4 +11,8 @@ export default {
 </script>
 
 <style>
+.page {
+  width: calc(100% - 70px);
+  height: 100%;
+}
 </style>

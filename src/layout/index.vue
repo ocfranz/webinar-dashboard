@@ -1,15 +1,17 @@
 <template>
   <div id="app">
-    <div class="grid">
+    <div class="container">
+      <DashboardSidebar />
       <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
+import DashboardSidebar from "./Sidebar.vue";
 export default {
-  name: "App",
-  components: {}
+  name: "AppLayout",
+  components: { DashboardSidebar }
 };
 </script>
 
@@ -28,10 +30,10 @@ html {
   width: 100%;
   height: 100%;
   background: linear-gradient(-105deg, #dc07d0, #0db7f4);
-  .grid {
-    width: 80%;
-    margin: 0 auto;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
   }
 }
 </style>
-
