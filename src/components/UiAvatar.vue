@@ -1,6 +1,8 @@
 <template>
-  <div class="avatar">
-    <span>{{username.substring(0,2)}}</span>
+  <div class="avatar-wrapper">
+    <div class="avatar">
+      <span>{{username.substring(0,2)}}</span>
+    </div>
   </div>
 </template>
 
@@ -12,6 +14,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .avatar {
   width: 35px;
   height: 35px;
