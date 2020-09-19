@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <span>Dash</span>
+    <div class="page-sidebar"></div>
   </div>
 </template>
 
@@ -16,5 +16,7 @@ export default {
   height: 100%;
   background-color: #202225;
   color: #ffffff;
+  display: flex;
+
 }
 </style>
