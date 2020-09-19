@@ -13,6 +13,8 @@ import chart from "./chart.vue";
 import layout from "./layout.vue";
 import file from "./file.vue";
 import videoIcon from "./video.vue";
+import plus from "./plus.vue";
+import hash from "./hash.vue";
 export default {
   name: "UiBaseIcon",
   props: {
@@ -28,10 +30,15 @@ export default {
     chart,
     layout,
     videoIcon,
-    file
+    file,
+    plus,
+    hash
   }
 };
 </script>
 
 <style>
+.ui-icon {
+  cursor: pointer;
+}
 </style>

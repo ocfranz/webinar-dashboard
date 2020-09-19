@@ -13,7 +13,8 @@ export default {
 
 <style lang="scss" scoped>
 .heading {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 </style>
