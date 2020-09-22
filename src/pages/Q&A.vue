@@ -20,8 +20,8 @@
                 <BaseIcon :iconName="'plus'" :size="'20px'"  />
               </button>
             </div>
-            <div class="list">
-              <QACategory />
+            <div class="list" v-for="category in categories" :key="category.toString()" >
+              <QACategory :name="category" :key="category.toString()"/>
             </div>
           </div>
         </div>
@@ -37,8 +37,13 @@ import Heading from "../components/UIHeading.vue";
 import BaseIcon from "../components/icons/UiBaseIcon.vue";
 import QACategory from "../components/UiQACategory.vue";
 export default {
-  components: { Heading, BaseIcon, QACategory }
+  data : function(){
+    return { categories : ['Design', 'Product', 'Design sprint', 'Marketing', 'More']}
+  },
+  components: { Heading, BaseIcon, QACategory },
 };
+
+
 </script>
 
 <style lang="scss">

@@ -40,5 +40,7 @@ export default {
 <style>
 .ui-icon {
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 </style>
