@@ -1,4 +1,6 @@
-# test
+# Webinar dashboard - Wip
+
+My first vue app 
 
 ## Project setup
 ```
@@ -20,5 +22,3 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
