@@ -20,9 +20,12 @@
                 <BaseIcon :iconName="'plus'" :size="'20px'"  />
               </button>
             </div>
-            <div class="list" v-for="category in categories" :key="category.toString()" >
-              <QACategory :name="category" :key="category.toString()"/>
+            <div class="list-category-wrapper">
+                  <div class="list" v-for="category in categories" :key="category.toString()" >
+                                <QACategory :name="category" :key="category.toString()"/>
+                              </div>
             </div>
+            
           </div>
         </div>
       </div>
@@ -36,9 +39,10 @@
 import Heading from "../components/UIHeading.vue";
 import BaseIcon from "../components/icons/UiBaseIcon.vue";
 import QACategory from "../components/UiQACategory.vue";
+
 export default {
   data : function(){
-    return { categories : ['Design', 'Product', 'Design sprint', 'Marketing', 'More']}
+    return { categories : ['General','meetings','Design','Product', 'Design sprint', 'Marketing', 'development','Marketing','More']}
   },
   components: { Heading, BaseIcon, QACategory },
 };
@@ -64,8 +68,13 @@ export default {
     padding-right: 25px;
   }
 
+  .page-navigation{
+    height: calc(100% - 50px);
+  }
+
   .question-controllers {
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    height: 50%;
     ul {
       margin: 0;
       padding: 0;
@@ -78,10 +87,14 @@ export default {
   }
 
   .list-categories {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
     .heading-categories {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 5px 0px 5px 0px;
       .heading {
         text-transform: capitalize;
         color: #69747f;
@@ -100,6 +113,16 @@ export default {
           box-shadow: none;
           outline: none;
         }
+      }
+    }
+  
+    .list-category-wrapper{
+      overflow-y: auto;
+      -ms-overflow-style : none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar{
+        display: none;
+
       }
     }
   }

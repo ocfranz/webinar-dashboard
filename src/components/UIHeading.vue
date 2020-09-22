@@ -1,5 +1,7 @@
 <template>
-  <span class="heading">{{children}}</span>
+  <div class="heading-wrapper">
+    <span class="heading">{{children}}</span>
+  </div>
 </template>
 
 <script>
@@ -12,6 +14,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.heading-wrapper{
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
 .heading {
   font-size: 16px;
   font-weight: bold;
