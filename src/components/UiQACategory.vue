@@ -20,7 +20,7 @@ export default {
   padding: 8px 0px;
   cursor: pointer;
   .ui-icon{
-    margin-right: 10px;
+    margin-right: 15px;
   }
   .category-name{
     text-transform: capitalize;

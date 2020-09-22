@@ -29,7 +29,9 @@
           </div>
         </div>
       </div>
-      <div class="chat-feed">fedd</div>
+      <div class="chat-feed">
+        <QAFeed />
+      </div>
       <div class="webinar-video">video</div>
     </div>
   </div>
@@ -39,12 +41,12 @@
 import Heading from "../components/UIHeading.vue";
 import BaseIcon from "../components/icons/UiBaseIcon.vue";
 import QACategory from "../components/UiQACategory.vue";
-
+import QAFeed from '../components/UiQAFeed.vue'
 export default {
   data : function(){
     return { categories : ['General','meetings','Design','Product', 'Design sprint', 'Marketing', 'development','Marketing','More']}
   },
-  components: { Heading, BaseIcon, QACategory },
+  components: { Heading, BaseIcon, QACategory, QAFeed },
 };
 
 
@@ -128,7 +130,7 @@ export default {
   }
   .chat-feed {
     width: 55%;
-    background-color: #27292c;
+    display: flex;
   }
   .webinar-video {
     width: 25%;
